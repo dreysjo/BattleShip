@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(19, 19, 19);
+    height: 100%;
+    margin: 0;
+}
+
+
+/* .bg {
+    background-image: url("https://wallpaperaccess.com/full/2835851.jpg");
+    position: relative;
+    opacity: 70%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+} */
+
+#container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://wallpaperaccess.com/full/2835851.jpg");
+    height: 130vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-attachment: fixed;
+}
+
+form {
+    color: antiquewhite;
+}
+
+#left-side {
+    height: 130vh;
+    width: 20%;
+    background: linear-gradient(rgba(252, 252, 252, 0.24), rgba(145, 141, 141, 0.8));
+    mix-blend-mode: lighten;
+    position: relative;
+}
+
+#left-title {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+
+#BoardSetup {
+    font-family: 'Overlock SC', cursive;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+#boardSize {
+    font-family: 'Overlock SC', cursive;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+#numShip {
+    font-family: 'Overlock SC', cursive;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+#PlayerName {
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.gameArea {
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: auto;
+    position: fixed;
+}
+
+table {
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 50px;
+    height: 60vh;
+    width: 60vh;
+    min-height: 65vh;
+}
+
+td {
+    border: 1px solid white;
+    height: auto;
+    width: auto;
+}
+
+#table-p1 td:hover {
+    background-color: bisque;
+    opacity: 50%;
+}
+
+#table-p2 td:hover {
+    background-color: red;
+    opacity: 50%;
+}
+
+#playersection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.playerscore {
+    margin: auto;
+}
+
+.hit {
+    background: url("ship.png") no-repeat center center;
+}
+
+.miss {
+    background: url("miss.png") no-repeat center center;
+}
+
+aside {
+    position: fixed;
+    left: 25vw;
+    top: 25vh;
+    width: 50vw;
+    height: 50vh;
+    background-color: orange;
+    /* padding-top: 20%;
+    padding-bottom: 0; */
+    text-align: center;
+    display: none;
+}

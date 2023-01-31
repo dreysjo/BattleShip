@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../BattleShip/css/homepage_css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aleo&family=Alice&family=Cinzel&family=Economica&family=Graduate&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Inknut+Antiqua:wght@300&family=Montserrat:wght@200&family=Overlock+SC&family=Sarabun:wght@100;300&family=Share+Tech+Mono&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+    <title>Battleship Game</title>
+</head>
+
+<body>
+    <header id="container">
+        <section id="left-side">
+            <div id="left-title">~Battleship~</div>
+            <div id="BoardSetup">
+                <h3 id="boardSize" style="padding-left: 15px;">Board size option:</h3>
+                <p style="padding-left: 10px;margin-left: 5px;">5x5 | 7x7 | 9x9 |11x11 |13x13</p>
+                <input type="range" value="5" min="5" max="13" step="2" id="boardSizeInput" style="margin-left: 20px; width: 14em;color: black;">
+
+                <h3 id="numShip" style="padding-left: 15px;">Numbers of Ships:</h3>
+                <p style="padding-left: 10px;margin-left: 5px;">3&nbsp;&nbsp;|&nbsp;&nbsp; 5 &nbsp;&nbsp;|&nbsp;&nbsp; 7 &nbsp;&nbsp;|&nbsp;&nbsp;9 &nbsp;&nbsp;|&nbsp;&nbsp;11</p>
+                <input type="range" value="3" min="3" max="11" step="2" id='numShipInput' style="margin-left: 16px; width: 12em;color: black;">
+
+                <h3 id="setset" style="padding-left: 15px;">Number of Sets:</h3>
+                <p style="padding-left: 10px;margin-left: 5px;">1&nbsp;|&nbsp; 3 &nbsp;|&nbsp;5&nbsp;|&nbsp;7&nbsp;</p>
+                <input type="range" value="1" min="1" max="7" step="2" id='setInput' style="margin-left: 12px; width: 8em;color: black;">
+
+                <h3 id="shipType" style="padding-left: 15px;">Type of Ships:</h3>
+                <p style="padding-left: 10px;margin-left: 5px;">1x1&nbsp;|&nbsp; 1x2 &nbsp;|&nbsp; 1x3 &nbsp;</p>
+                <input type="range" value="1" min="1" max="3" step="1" id='shipTypeInput' style="margin-left: 12px; width: 8em;color: black;">
+
+                <div id="PlayerName">
+                    <h3 style="font-weight: normal;">Player 1:</h3>
+                    <input type="text" id="player1" style="border-radius: 5px;">
+                    <h3 style="font-weight:normal">Player 2:</h3>
+                    <input type="text" id="player2" style="border-radius: 5px;">
+                </div>
+
+                <div id="save"><input type="button" id="saveButton " value="start" onclick="controller.getUserData()" style="margin-top: 30px;margin-left: 30px;padding: 0%;font-size: 18px;padding: 5px;width: 50%;border-radius: 5px; "></div>
+            </div>
+        </section>
+        <section class="gameArea ">
+            <h1 id="set" style="padding-left: 500px;">SET 0-0</h1>
+            <div id="playersection">
+                <table id="table-p1" disabled>
+                    <!-- <tr>
+                        <td id="00" onclick="controller.processGuess(this.id)">1</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+
+                    </tr> -->
+
+                </table>
+                <table id="table-p2">
+                    <!-- <tr>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr> -->
+                    <tr>
+
+                    </tr>
+
+                </table>
+                <div id="score-p1" class="playerscore">Score-P1: 0 </div>
+                <div id="score-p2" class="playerscore">Score-P2: 0</div>
+            </div>
+        </section>
+        <aside id="announce">
+            PLAYER SIJI WINS!!
+        </aside>
+    </header>
+    <script src="battleship_js.js"></script>
+</body>
+
+</html>
